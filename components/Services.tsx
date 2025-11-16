@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 
 interface ServiceCardProps {
@@ -7,6 +5,8 @@ interface ServiceCardProps {
   body: string;
   icon: React.ReactNode;
 }
+
+const meshNetworkPattern = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGxpbmUgeDE9IjAiIHkxPSI1MCIgeDI9IjUwIiB5Mj0iMCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMTUpIiBzdHJva2Utd2lkdGg9IjAuNSIvPjxsaW5lIHgxPSI1MCIgeTE9IjAiIHgyPSIxMDAiIHkyPSI1MCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMTUpIiBzdHJva2Utd2lkdGg9IjAuNSIvPjxsaW5lIHgxPSIwIiB5MT0iNTAiIHgyPSI1MCIgeTI9IjEwMCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMTUpIiBzdHJva2Utd2lkdGg9IjAuNSIvPjxsaW5lIHgxPSI1MCIgeTE9IjEwMCIgeDI9IjEwMCIgeTI9IjUwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xNSkiIHN0cm9rZS13aWR0aGg9IjAuNSIvPjxsaW5lIHgxPSI1MCIgeTE9IjAiIHgyPSIxMDAiIHkyPSI1MCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMTUpIiBzdHJva2Utd2lkdGg9IjAuNSIvPjxsaW5lIHgxPSIwIiB5MT0iNTAiIHgyPSIxMDAiIHkyPSI1MCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMTUpIiBzdHJva2Utd2lkdGg9IjAuNSIvPjxjaXJjbGUgY3g9IjUwIiBjY3k9IjAiIHI9IjEuNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjcuIi8+PGNpcmNsZSBjeD0iMCIgY3k9IjUwIiByPSIxLjUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC43KSIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjUwIiByPSIxLjUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC43KSIvPjxjaXJjbGUgY3g9IjUwIiBjeT0iMTAwIiByPSIxLjUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC43KSIvPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjEuNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjcuIi8+PC9zdmc+';
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, body, icon }) => (
   <div className="bg-white p-8 rounded-lg shadow-lg group hover:shadow-xl hover:border-brand-accent border border-transparent transform hover:-translate-y-2 transition-all duration-300">
@@ -19,8 +19,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, body, icon }) => (
 );
 
 const Services: React.FC = () => {
-  const servicesImage = "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-
   const servicesData = [
     {
       title: "Digital Transformation",
@@ -45,15 +43,19 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-20 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url("${servicesImage}")`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-      </div>
+    <section 
+      id="services" 
+      className="py-20 relative overflow-hidden"
+      style={{
+        backgroundColor: '#0D1117', // Dark base color
+        backgroundImage: `radial-gradient(at 0% 100%, rgba(32, 201, 151, 0.1) 0%, transparent 70%), 
+                          radial-gradient(at 100% 0%, rgba(13, 110, 253, 0.08) 0%, transparent 70%), 
+                          url('${meshNetworkPattern}')`,
+        backgroundSize: 'cover, cover, 100px 100px', // Gradients cover, pattern tiles
+        backgroundRepeat: 'no-repeat, no-repeat, repeat',
+        backgroundPosition: 'left bottom, right top, 0 0', // Positioning for gradients and pattern
+      }}
+    >
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-montserrat text-white">Our Services</h2>
