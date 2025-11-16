@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import CognaterraLogo from './CognaterraLogo'; // Import the new logo component
 
