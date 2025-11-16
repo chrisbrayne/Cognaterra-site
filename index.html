@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kYpRxC-1_v5smzhwE8.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBRVSDi-iRNUuVzdmDY.woff2" as="font" type="font/woff2" crossorigin>
     <style>
       html {
         scroll-behavior: smooth;
@@ -41,6 +43,12 @@
       }
       .nav-link-hover:hover {
         color: #20c997;
+      }
+      /* Ensure smooth transitions for various elements */
+      .transition-all {
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
     </style>
   <script type="importmap">
