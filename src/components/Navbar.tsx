@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <a href="#home" className="transition-opacity duration-300 hover:opacity-80" aria-label="Cognaterra Home">
-            <CognaterraLogo className="h-8 w-auto" /> {/* Use the new SVG logo component */}
+            <CognaterraLogo className="h-48 w-auto" /> {/* Use the new SVG logo component */}
           </a>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
