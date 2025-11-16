@@ -5,6 +5,7 @@ interface CognaterraLogoProps {
 }
 
 const CognaterraLogo: React.FC<CognaterraLogoProps> = (props) => {
+  // The className is passed down to the SVG element to allow styling (e.g., height, width) from the parent component.
   return (
     <svg width="243" height="42" viewBox="0 0 243 42" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>Cognaterra Logo</title>
