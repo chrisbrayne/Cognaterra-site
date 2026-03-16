@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Introduction from './components/Introduction';
 import Services from './components/Services';
+import Insights from './components/Insights';
 import About from './components/About';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Hero />
         <Introduction />
         <Services />
+        <Insights />
         <About />
         <CTA />
       </main>
