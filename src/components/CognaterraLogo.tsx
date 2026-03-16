@@ -7,7 +7,7 @@ interface CognaterraLogoProps {
 const CognaterraLogo: React.FC<CognaterraLogoProps> = (props) => {
   return (
     <svg 
-      viewBox="0 0 2048 1696" 
+      viewBox="150 400 1750 900" 
       version="1.1" 
       xmlns="http://www.w3.org/2000/svg" 
       preserveAspectRatio="xMidYMid meet"
