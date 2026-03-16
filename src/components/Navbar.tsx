@@ -17,8 +17,8 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
-          <a href="#home" className="transition-opacity duration-300 hover:opacity-80" aria-label="Cognaterra Home">
-            <CognaterraLogo className="h-8 w-auto" /> {/* Fixed logo size - was h-48, now h-8 */}
+          <a href="#home" className="transition-all duration-300 hover:opacity-90 transform hover:scale-105" aria-label="Cognaterra Home">
+            <CognaterraLogo className="h-12 w-auto" /> {/* Increased from h-8 to h-12 for better visibility */}
           </a>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
