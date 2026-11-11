@@ -5,11 +5,11 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#services', label: 'Services' },
-    { href: '#insights', label: 'Insights' },
-    { href: '#about', label: 'About' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/#home', label: 'Home' },
+    { href: '/#services', label: 'Services' },
+    { href: '/#insights', label: 'Insights' },
+    { href: '/#about', label: 'About' },
+    { href: '/#contact', label: 'Contact' },
   ];
 
   return (
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
-          <a href="#home" className="transition-all duration-300 hover:opacity-90 transform hover:scale-105" aria-label="Cognaterra Home">
+          <a href="/#home" className="transition-all duration-300 hover:opacity-90 transform hover:scale-105" aria-label="Cognaterra Home">
             <CognaterraLogo layout="horizontal" className="h-10 md:h-12 w-auto" />
           </a>
           <div className="hidden md:flex items-center space-x-8">

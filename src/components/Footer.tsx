@@ -32,10 +32,18 @@ const Footer: React.FC = () => {
         <p className="mb-4 text-xs text-gray-500">
           Cognaterra Limited &bull; Registered in England & Wales &bull; Company No. 16858068
         </p>
-        <div className="flex justify-center space-x-4 text-xs text-gray-500">
+        <div className="flex justify-center space-x-4 text-xs text-gray-500 mb-4">
           <span>Clarity, Trust, Impact</span>
           <span>&bull;</span>
           <span>Digital Transformation for Heritage</span>
+        </div>
+        <div className="flex justify-center items-center space-x-4 text-xs">
+          <a
+            href="/privacy"
+            className="text-gray-400 hover:text-[var(--color-brand-accent)] underline transition-colors duration-200"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>
