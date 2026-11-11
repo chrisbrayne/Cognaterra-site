@@ -12,7 +12,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static crawlable fallback for bots and non-JS verification crawlers -->
+      <header style="display:none;">
+        <nav>
+          <a href="/#home">Home</a>
+          <a href="/#services">Services</a>
+          <a href="/#insights">Insights</a>
+          <a href="/#about">About</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </header>
+      <footer style="display:none;">
+        <p>&copy; 2026 Cognaterra Limited. All rights reserved.</p>
+        <p>Cognaterra Limited &bull; Registered in England &amp; Wales &bull; Company No. 16858068</p>
+        <a href="/privacy">Privacy Policy</a>
+      </footer>
+    </div>
+    <noscript>
+      <div style="text-align:center; padding: 20px;">
+        <p>&copy; 2026 Cognaterra Limited. All rights reserved.</p>
+        <p>Cognaterra Limited &bull; Registered in England &amp; Wales &bull; Company No. 16858068</p>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+    </noscript>
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
